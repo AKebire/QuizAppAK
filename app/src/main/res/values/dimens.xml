@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="questionFontSize">18sp</dimen>
+    <dimen name="questionChoiceFontSize">16sp</dimen>
+    <dimen name="quizResultFontSize">30sp</dimen>
+
+
+    <dimen name="quizMargin">20dp</dimen>
+
+</resources>

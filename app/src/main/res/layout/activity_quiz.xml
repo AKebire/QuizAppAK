@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.android.quizappak.Activityquiz">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/mainQuestion"
+            android:text="@string/question_1" />
+
+        <RadioGroup
+            android:id="@+id/q_1_RadioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                style="@style/questionChoice"
+                android:text="@string/question_1_a" />
+
+            <RadioButton
+                android:id="@+id/q1_answer"
+                style="@style/questionChoice"
+                android:text="@string/question_1_b" />
+
+            <RadioButton
+                android:id="@+id/question1_c"
+                style="@style/questionChoice"
+                android:text="@string/question_1_c" />
+
+            <RadioButton
+                android:id="@+id/question1_d"
+                style="@style/questionChoice"
+                android:text="@string/question_1_d" />
+
+        </RadioGroup>
+
+
+
+        <TextView
+            style="@style/mainQuestion"
+            android:text="@string/question_2" />
+
+        <RadioGroup
+            android:id="@+id/q_2_RadioGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/q2_answer"
+                style="@style/questionChoice"
+                android:text="@string/question_2_a" />
+
+            <RadioButton
+                style="@style/questionChoice"
+                android:text="@string/question_2_b" />
+
+            <RadioButton
+                android:id="@+id/question2_c"
+                style="@style/questionChoice"
+                android:text="@string/question_2_c" />
+
+            <RadioButton
+                android:id="@+id/question2_d"
+                style="@style/questionChoice"
+                android:text="@string/question_2_d" />
+
+        </RadioGroup>
+
+
+        <TextView
+            style="@style/mainQuestion"
+            android:text="@string/question_3" />
+
+        <CheckBox style="@style/questionChoice"
+            android:text="@string/question_3_a"/>
+
+        <CheckBox style="@style/questionChoice"
+            android:id="@+id/q3_answer_1"
+            android:text="@string/question_3_b"/>
+
+        <CheckBox style="@style/questionChoice"
+            android:id="@+id/q3_answer_2"
+            android:text="@string/question_3_c"/>
+
+        <CheckBox style="@style/questionChoice"
+            android:text="@string/question_3_d"/>
+
+        <TextView
+            style="@style/mainQuestion"
+            android:text="@string/question_4" />
+
+        <EditText
+            android:id="@+id/q4_answer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/quizMargin"
+            android:layout_marginRight="@dimen/quizMargin"
+            android:layout_marginTop="@dimen/quizMargin"
+            android:layout_marginBottom="@dimen/quizMargin"
+            android:hint="@string/hintContinent"
+            android:textColor="@color/colorPrimary"
+            android:textColorHint="@color/colorPrimary"/>
+
+        <Button style="@style/CustomButtons"
+            android:text="@string/submitAnswers"
+            android:background="@color/colorPrimary"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/quizMargin"
+            android:layout_marginBottom="@dimen/quizMargin"
+            android:padding="20dp"
+            android:onClick="submitQuiz"/>
+
+
+
+    </LinearLayout>
+
+</ScrollView>
